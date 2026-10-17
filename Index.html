@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas de Lavado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section id="section-agregar">
+
+        <label for="nameCliente">Nombre del cliente</label>
+        <input id="nameCliente" type="text">
+        <br>
+        <label for="placaMoto">Placa de la moto</label>
+        <input id="placaMoto" type="text">
+        <br>
+        <label for="tipoServicio">Servicio</label>
+        <select id="tipoServicio">
+            <option value="">Seleccione un servicio</option>
+            <option value="Lavado basico">Lavado basico</option>
+            <option value="Lavado completo">Lavado completo</option>
+            <option value="Detailing">Detailing</option>
+            <option value="Polichado">Polichado</option>
+        </select>
+        <br>
+        <button id="btn-agregar" type="button"> Agregar Reserva </button>
+
+    </section>
+
+    <section id="section-buscar">
+
+        <label for="nameBuscar">Nombre del cliente a buscar</label>
+        <input id="nameBuscar" type="text">
+        <button id="btn-buscar" type="button"> Buscar Reserva </button>
+        <button id="btn-todas" type="button"> Mostrar Todas </button>
+
+    </section>
+
+    <section id="section-principal" class="section"></section>
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>

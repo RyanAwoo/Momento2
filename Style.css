@@ -1,0 +1,116 @@
+section{
+    margin-bottom: 39px;
+}
+
+body {
+    background-color: #eef1f5;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222222;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px 15px;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    border-top: 5px solid #ff7a00;
+}
+
+/* Titulos de cada seccion */
+#section-agregar::before {
+    content: "Nueva reserva";
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#section-buscar::before {
+    content: "Buscar reserva";
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#section-principal::before {
+    content: "Reservas registradas";
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Formulario */
+section br {
+    display: none;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #bbbbbb;
+    border-radius: 6px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #ff7a00;
+}
+
+/* Botones */
+button {
+    background-color: #ff7a00;
+    color: #ffffff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+button:hover {
+    background-color: #d96800;
+}
+
+#btn-todas {
+    background-color: #444444;
+}
+
+#btn-todas:hover {
+    background-color: #222222;
+}
+
+/* Resultados */
+#section-principal p {
+    background-color: #f7f7f7;
+    border-left: 4px solid #ff7a00;
+    padding: 10px 12px;
+    margin: 0 0 10px 0;
+    border-radius: 4px;
+}
+
+
+#section-buscar {
+    display: none;
+}
+
+#section-principal:empty {
+    display: none;
+}
